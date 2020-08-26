@@ -10,7 +10,7 @@ class LineItemsTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Line Items"
   end
 
-  test "creating a Line item" do
+=begin  test "creating a Line item" do
     visit line_items_url
     click_on "New Line Item"
 
@@ -34,6 +34,7 @@ class LineItemsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
+
   test "destroying a Line item" do
     visit line_items_url
     page.accept_confirm do
@@ -42,4 +43,5 @@ class LineItemsTest < ApplicationSystemTestCase
 
     assert_text "Line item was successfully destroyed"
   end
+=end
 end
