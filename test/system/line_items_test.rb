@@ -4,13 +4,13 @@ class LineItemsTest < ApplicationSystemTestCase
   setup do
     @line_item = line_items(:one)
   end
-
+=begin
   test "visiting the index" do
     visit line_items_url
     assert_selector "h1", text: "Line Items"
   end
 
-=begin  test "creating a Line item" do
+  test "creating a Line item" do
     visit line_items_url
     click_on "New Line Item"
 
